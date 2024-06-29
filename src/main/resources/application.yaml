@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: Telemedicine-system
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/telemedicine_system_db
+    username: postgres
+    password: postgres
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  flyway:
+    schemas: telemedicine_schema
+server:
+  port: 8100
+  servlet:
+    context-path: /telemedicine-system
+jwt:
+  lifetime: 36000000
