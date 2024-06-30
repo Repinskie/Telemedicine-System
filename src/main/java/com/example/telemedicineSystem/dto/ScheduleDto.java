@@ -1,9 +1,6 @@
 package com.example.telemedicineSystem.dto;
 
 public record ScheduleDto(
-        String doctorName,
-        String doctorSpecialization,
-        String cabinet,
         String dayOfWeek,
         String startTime,
         String endTime,
@@ -11,3 +8,7 @@ public record ScheduleDto(
         String breakEnd
 ) {
 }
+/*
+String doctorName,
+String doctorSpecialization,
+String cabinet,*/

@@ -11,9 +11,6 @@ import org.springframework.stereotype.Service;
 public class ScheduleConverter {
     public ScheduleDto entityToDto(Schedule schedule){
         return new ScheduleDto(
-                schedule.getScheduleForDoctor().getName(),
-                schedule.getScheduleForDoctor().getSpecialization(),
-                schedule.getCabinet(),
                 schedule.getDayOfWeek(),
                 DateTimeConverter.timeFormatToString(schedule.getStartTime()),
                 DateTimeConverter.timeFormatToString(schedule.getEndTime()),

@@ -12,7 +12,10 @@ public class DateTimeConverter {
     }
 
     public static String timeFormatToString(LocalTime time){
-        DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("HH:mm:ss");
-        return timeFormatter.format(time);
+        if (time != null) {
+            DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("HH:mm:ss");
+            return timeFormatter.format(time);
+        }
+        return "";
     }
 }

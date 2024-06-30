@@ -15,7 +15,8 @@ public class AppointmentConverter {
                 appointment.getAppointmentForDoctor().getName(),
                 appointment.getAppointmentForDoctor().getSpecialization(),
                 DateTimeConverter.dateFormatToString(appointment.getDate()),
-                DateTimeConverter.timeFormatToString(appointment.getTime())
+                DateTimeConverter.timeFormatToString(appointment.getTime()),
+                appointment.getStatus()
         );
     }
 }

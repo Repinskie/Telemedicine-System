@@ -5,6 +5,7 @@ public record AppointmentDto(
         String doctorName,
         String doctorSpecialization,
         String date,
-        String time
+        String time,
+        String status
 ) {
 }
