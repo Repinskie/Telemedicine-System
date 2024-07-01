@@ -8,7 +8,3 @@ public record ScheduleDto(
         String breakEnd
 ) {
 }
-/*
-String doctorName,
-String doctorSpecialization,
-String cabinet,*/
